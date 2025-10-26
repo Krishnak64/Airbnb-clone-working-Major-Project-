@@ -33,7 +33,7 @@ module.exports.showListing = async (req, res) => {
     req.flash("error", "Listing you requested for does not exist!");
     return res.redirect("/listings"); // stop execution here
   }
-   res.render("listings/show.ejs", { listing, mapToken: process.env.MAP_TOKEN });
+  res.render("listings/show.ejs", { listing });
 }
 
 
@@ -86,7 +86,7 @@ module.exports.renderEditForm = async (req, res) => {
     const listing = await Listing.findById(id);
     if(!listing) {
         req.flash("error", "Listing you requested for does not exist!");
-        return res.redirect("/listings"); // ✅ stop execution here
+        return res.redirect("/listings"); //  stop execution here
     }
 
     let originalImageUrl = listing.image.url;
