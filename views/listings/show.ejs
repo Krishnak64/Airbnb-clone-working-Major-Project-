@@ -7,6 +7,55 @@
 
 </script>
 
+
+
+<style>
+
+/* ---------- Responsive Design ---------- */
+
+
+
+/* 📲 Mobile Devices (≤767px) */
+@media (max-width: 767px) {
+
+  .btns {
+    display: flex;
+    
+    align-items: stretch;
+  }
+  .edit-btn {
+    width: 90px;
+    align-items: center;
+  }
+
+  .col-5.ms-3.mb-3 {
+    width: 230px;
+    margin-left: 0;
+
+  }
+}
+
+/* 📱 Small Mobile (Moto G4 and ≤480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .btns {
+    display: flex;
+    
+    align-items: stretch;
+  }
+  .edit-btn {
+    width: 90px;
+    align-items: center;
+  }
+}
+</style>
+
+
+
+
 <div class="row mt-4">
   <div class="col-8 offset-3">
       <h3><b><%= listing.title %></b></h3>

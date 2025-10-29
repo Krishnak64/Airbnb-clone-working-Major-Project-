@@ -1,5 +1,76 @@
 <% layout("/layouts/boilerplate") %>
 
+<style>
+
+   
+  /* ------------------ Responsive Media Queries ------------------ */
+
+  /* Extra Small Devices (Mobile <576px) */
+  @media (max-width: 575.98px) {
+    h1.signup {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .col-6.offset-3.signup {
+      width: 90% !important;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .signup form {
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
+
+    label, input, button {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Small Devices (576px–767px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    h1.signup {
+      font-size: 1.8rem;
+    }
+
+    .col-6.offset-3.signup {
+      width: 85% !important;
+      margin: 0 auto;
+    }
+
+    .signup form {
+      padding: 1.75rem;
+    }
+  }
+
+  /* Medium Devices (768px–991px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    h1.signup {
+      font-size: 2rem;      
+    }
+
+    .col-6.offset-3.signup {
+      width: 60% !important;
+      margin: 0 auto;
+    }
+
+    .signup form {
+      padding: 2rem;
+    }
+  }
+
+
+
+  /* Fix unwanted outline or scroll on small screens */
+  *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+</style>
+
+
+
 <div class="row mt-3">
   <h1 class="col-6 offset-3">SignUp for WanderLust </h1>
   <div class="col-6 offset-3">

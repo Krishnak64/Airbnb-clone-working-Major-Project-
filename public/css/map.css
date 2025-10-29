@@ -1,0 +1,59 @@
+/* Map */
+
+#map {
+    height: 400px;
+    width: 90vh;
+}
+
+/* Extra Large Screens (≥1200px) */
+@media (min-width: 1200px) {
+  #map {
+    height: 500px;
+    border-radius: 20px;
+  }
+}
+
+/* Large Screens (992px–1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  #map {
+    height: 450px;
+    border-radius: 18px;
+    width: 450px;
+  }
+}
+
+/* Medium Screens (768px–991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  #map {
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+  }
+}
+
+/* Small Screens (576px–767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  #map {
+    height: 350px;
+    width: 200px;
+    border-radius: 12px;
+  }
+}
+
+/* Extra Small Screens (<576px) */
+@media (max-width: 575px) {
+  #map {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Very Small Phones (<400px) */
+@media (max-width: 400px) {
+  #map {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
