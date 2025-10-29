@@ -21,7 +21,87 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
    }
+
+
+
+/* ------------------ Media Queries ------------------ */
+
+/* Extra Large (≥1200px) */
+@media (min-width: 1200px) {
+  .navbar-nav {
+    background-color: white;
+    height: 48px;
+  }
+}
+
+/* Tablets (576px–767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .navbar-nav {
+    background-color: white;
+    height: auto;
+  }
+}
+
+/* Phones (<575px) */
+@media (max-width: 575px) {
+  .navbar-nav {
+    background-color: white;
+    height: auto;
+  }
+
+  /* keep signup/login in one line */
+  .navbar-nav.ms-auto {
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+  }
+
+  .navbar-nav.ms-auto .nav-link {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Adjust search box */
+  .search-inp {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    
+  }
+
+
+  .search-btn {
+    padding: 0 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Phones (<400px) */
+@media (max-width: 400px) {
+  .navbar-nav {
+    background-color: white;
+    height: 48px;
+  }
+ 
+  .navbar-nav.ms-auto {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .navbar-nav.ms-auto .nav-link {
+    font-size: 0.85rem;
+    margin: 0 0.3rem;
+  }
+
+  .search-inp {
+    width: 120px;
+    
+    
+  }
+}
 </style>
+
+
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
